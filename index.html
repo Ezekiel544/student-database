@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+
+    <div class="container">
+        <h1>Student Grade Management System</h1>
+
+        <!-- Add Student Section -->
+        <div class="form-section">
+            <h2>Add a New Student</h2>
+            <input type="text" id="studentName" placeholder="Enter student name">
+            <div id="redSpan"></div>
+            <div id="responseTwo"></div>
+            <button id="addStudent">Add Student</button>
+        </div>
+
+        <!-- Search Student Section -->
+        <div class="form-section">
+            <h2>Search a Student</h2>
+            <input type="number" id="studentId" placeholder="Enter student id">
+            <div id="redSpans"></div>
+            <button id="searchStudent">Search Student</button>
+            <div id="response"></div>
+           
+        </div>
+
+        <!-- Search Student Name Section -->
+        <div class="form-section">
+            <h2>Search a Student Name</h2>
+            <input type="text" id="searchName" placeholder="Enter student name">
+            <div id="redSpans"></div>
+            <div id="responseName"></div>
+            <button id="searchBtn">Search Student</button>
+            <div id="response"></div>
+           
+        </div>
+
+       
+
+        <!-- Display All Students Section -->
+        <div class="form-section">
+            <h2>All Students</h2>
+            <button id="list-students-btn" onclick="showAllStudentData()">Show All Students</button>
+            <div id="response2" style="border: 2px solid green;"></div>
+        </div>
+
+        
+
+    <script src="./index2.js"></script>
+</body>
+</html>

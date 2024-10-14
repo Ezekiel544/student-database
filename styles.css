@@ -1,0 +1,207 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a2b45; /* Navy Blue background for the whole page */
+    color: #f5f5f5; /* Light text color to contrast with navy blue */
+    line-height: 1.6;
+    height: 100%;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff; /* White background for the container */
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transform: translateY(30px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(10px);
+}
+
+h1 {
+    text-align: center;
+    color: #e74c3c; /* Bright red */
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.form-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff; /* White background for each section */
+    border-radius: 8px;
+}
+
+h2 {
+    color: #f39c12; /* Bright yellow */
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px 18px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f4f4f4; /* Soft grayish background for inputs */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #f39c12; /* Yellow focus border */
+    box-shadow: 0px 0px 8px rgba(243, 156, 18, 0.2); /* Yellow shadow */
+    outline: none;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #ff69b4; /* Bright pink */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+    background-image: linear-gradient(45deg, #ff69b4, #1a2b45); /* Navy Blue and Pink Gradient */
+}
+
+button:hover {
+    background-color: #ff1493; /* Darker pink */
+    transform: scale(1.05); /* Slight grow on hover */
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffe6f7; /* Light pink background */
+    margin-bottom: 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+li:hover {
+    background-color: #ffb6c1; /* Slightly darker pink on hover */
+}
+
+p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f5f5f5; /* Light text color */
+}
+
+#student-list {
+    margin-top: 10px;
+}
+
+#redSpan {
+    font-size: 14px;
+    color: #e74c3c; /* Bright red */
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+#responseTwo {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #3498db; /* Bright blue */
+}
+
+#responseName {
+    font-size: 16px;
+    margin-bottom: 18px;
+    color: #2ecc71; /* Bright green */
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-control label {
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.form-control input {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control input:focus {
+    border-color: #ff69b4; /* Pink focus border */
+    box-shadow: 0px 0px 5px rgba(255, 105, 180, 0.3); /* Pink shadow */
+    outline: none;
+}
+
+button:disabled {
+    background-color: #b0bec5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    input[type="text"], input[type="number"] {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
